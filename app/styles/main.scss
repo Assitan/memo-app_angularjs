@@ -1,4 +1,4 @@
-$icon-font-path: "/bower_components/sass-bootstrap/fonts/";
+$icon-font-path: "../bower_components/sass-bootstrap/fonts/";
 
 @import 'sass-bootstrap/lib/bootstrap';
 
@@ -28,19 +28,21 @@ body {
     }
 
     .dashbord{
-        background: #131111 url(/images/zwartevilt.png) repeat 0 0;
+        background: #131111 url(../images/zwartevilt.png) repeat 0 0;
+        overflow: hidden;
         padding: 15px 0 50px 0;
         box-shadow: 0 3px 2px #000;
         min-height: 475px;
 
-        aside{
-            input{
-                position: fixed;
+        #settings{
+            position: fixed;
+            .colorsSettings{
+                margin-top: 10px;
             }
         }
 
-        section{
-            overflow: hidden;
+        #memos{
+           margin-left: 200px;
 
                 .memos{
                     list-style-type: none;
@@ -63,7 +65,7 @@ body {
                         .remove_btn{
                             display: none;
                             position: absolute;
-                            top: 24px;
+                            top: 54px;
                             right: 50px;
                             cursor :pointer;
                         }
@@ -74,7 +76,7 @@ body {
                             height: 150px;
                             resize: none;
                             outline: none;
-                            background: #F6F761 url(/images/traits.png) repeat scroll;
+                            background: #F6F761 url(../images/traits.png) repeat scroll;
                             border: 0;
                             padding: 0 20px;
                         }
@@ -110,8 +112,8 @@ body {
         
     }
 
-    .scrollTop{
-        display: none;
+    #scrollTop{
+        //display: none;
         position: fixed;
         bottom: 0;
         margin-bottom: 100px;
@@ -125,7 +127,6 @@ body {
             text-align: center;
         }
     }
-
 }
 
 
