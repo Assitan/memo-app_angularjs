@@ -34,6 +34,13 @@ body {
         box-shadow: 0 3px 2px #000;
         min-height: 475px;
 
+        #data_result{
+            color: rgb(238, 238, 238);
+            //border-right: 1px dotted rgb(238, 238, 238);
+            margin-top: 20px;
+            //min-height: 200px;
+        }
+
         #settings{
             position: fixed;
             .colorsSettings{
@@ -84,9 +91,17 @@ body {
                         .btns{
                             margin-top: 20px;
                             text-align: center;
+
+                            form:first-child{
+                                float: left;
+                            }
+                            form:last-child{
+                                float: right;
+                            }
                         }
                     }
                 }
+
             }
 
             .colors{
@@ -113,7 +128,6 @@ body {
     }
 
     #scrollTop{
-        //display: none;
         position: fixed;
         bottom: 0;
         margin-bottom: 100px;
